@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--=== Start Navigation Bar ===-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <img src="images/logo.png" style="height: 4em; width: 5em;" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Academics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Academic Programmes</a>
+                        <a class="dropdown-item" href="#">Academic Calendar</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Infrastructure</a>
+                        <a class="dropdown-item" href="gallery.html">Gallery</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admissions.html">Admissions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="facilities.html">Facilities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactUs.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </nav>
+    <!--=== End Navigation Bar ===-->
+
+    <br>
+
+    <!--=== Start Marquee tag ===-->
+    <!--=== Marquee tag for important notices ===-->
+    <marquee behavior="scroll" scrollamount="7" direction="left" onmouseover="this.stop();" onmouseout="this.start();"
+        class="m14">
+        <span><a href="admissions.html"><span><img src="images/marquee_new_icon.png"> Admissions for Academic year
+                    2022-23 are open
+                    ************</span></a></span>
+
+        <span><a href="admissions.html"><span><img src="images/marquee_new_icon.png"> Important Circular regarding
+                    Scholarships
+                    ************</span></a></span>
+    </marquee>
+    <!--=== End Marquee tag ===-->
+
+    <br>
+
+    <!--=== Start carousel section ===-->
+    <!--=== Image carousel to display images of school, functions, events etc. ===-->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/carousel_image_1.jpg" alt="Students" width="100%" height="500">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 style="color: white;">VG International School</h1>
+                    <p style="color: black;">
+                        VG International School is the school of excellence where students are groomed to grow to their
+                        optimum potential of intellectual and emotional capabilities.
+                    </p>
+                    <button class="btn btn-primary" type="button"><a href="admissions.html"
+                            style="text-decoration: none; text-transform: none; color: white;">Take Course</a></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/carousel_image_2.jpg" alt="Sports" width="100%" height="500">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 style="color: black;">Annual Sports Day</h1>
+                    <p style="color: black;">
+                        The school of growth of students in all fields
+                    </p>
+                    <button class="btn btn-success" type="button"><a href="admissions.html"
+                            style="text-decoration: none; text-transform: none; color: white;">Take Course</a></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/carousel_image_3.jpg" alt="Building" width="100%" height="500">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 style="color: black;">VG International School</h1>
+                    <p style="color: black; font-size: 20px;">
+                        The school of excellence
+                    </p>
+                    <button class="btn btn-warning" type="button"><a href="admissions.html"
+                            style="text-decoration: none; text-transform: none; color: white;">Take Course</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <!--=== End carousel section ===-->
+
+    <br><br><br><br><br>
+
+    <!--=== Start Our mission & vision section ===-->
+    <div class="container missionvision">
+        <h2>Our Mission & Vision</h2>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card h-100">
+                    <img src="images/mission.png" class="card-img-top" width="100" height="300" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mission</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card h-100">
+                    <img src="images/vision.jpg" class="card-img-top" width="100" height="300" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Vision</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=== End Our mission & vision section ===-->
+
+    <br><br><br><br><br>
+
+    <!--=== Start gallery section ===-->
+    <div class="container">
+        <h2>Gallery</h2>
+        <hr>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail img-responsive">
+                    <a href="#" title="Image 1"><img src="images/gallery_image_1.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail img-responsive">
+                    <a href="#" title="Image 2"><img src="images/gallery_image_4.jpg"></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 ">
+                <div class="thumbnail">
+                    <a href="#" title="Image 3"><img src="images/gallery_image_4.jpg"></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail img-responsive">
+                    <a href="#" title="Image 4"><img src="images/gallery_image_4.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail img-responsive">
+                    <a href="#" title="Image 5"><img src="images/gallery_image_1.jpg"></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 ">
+                <div class="thumbnail">
+                    <a href="#" title="Image 6"><img src="images/gallery_image_4.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=== End gallery section ===-->
+
+    <br><br><br><br><br>
+
+    <!--=== Start Footer section ===-->
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Facilities</h3>
+                        <ul>
+                            <li><a href="facilities.html">Laboratory</a></li>
+                            <li><a href="facilities.html">Library</a></li>
+                            <li><a href="facilities.html">Sports</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="contactUs.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>VG International School</h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula
+                            rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum
+                            vel in justo.</p>
+                    </div>
+                    <div class="col item social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-snapchat"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <p class="copyright">VG International School © 2022</p>
+            </div>
+        </footer>
+    </div>
+    <!--=== End Footer section ===-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

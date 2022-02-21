@@ -1,0 +1,331 @@
+/****************
+  marquee CSS
+*****************/
+.top-scroll {
+  border: 1px solid #ddd;
+  margin: 10px 0px;
+  overflow: hidden;
+}
+
+/*******************
+    Gallery CSS
+*******************/
+
+.thumbnail {
+	margin-bottom:6px;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.blur {
+    transform: scale(0.9);
+    opacity: 0.6;
+  	-webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+@media (min-width: 768px) {
+  .missionvision .info-wrap {
+    padding-left: 1.5rem;
+  }
+}
+
+/*******************
+    Footer CSS
+*******************/
+
+.footer-dark {
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity:0.9;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+
+
+/*******************
+    About Us CSS
+*******************/
+
+.section-container{
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-container .columns{
+  flex:0 0 auto;
+  width:50%;
+}
+
+.section-container .columns.image{
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.section-container .columns.content .content-container{
+  padding:40px 50px;
+}
+
+.section-container .columns.content .content-container h5{
+  font-weight:700;
+  font-size:25px;
+  margin-bottom:20px;
+}
+.section-container .columns.content .content-container p{
+  font-weight:400;
+  font-size:16px;
+  margin-bottom:20px;
+  margin-bottom:15px;
+  text-align:justify;
+}
+
+@media screen and (max-width:767px){
+  .section-container{
+    flex-flow:row wrap;
+  }
+  .section-container .columns.image{
+    display:block;
+    order:1;
+    width:100%;
+    height:250px;
+  }
+  .section-container .columns.content{
+    display:block;
+    order:2;
+    width:100%;
+  }
+  .section-container .columns.content .content-container{
+    padding:20px 35px;
+  }
+  .section-container .columns.content .content-container h5{
+    margin-bottom:5px;
+  }
+}
+
+
+/*****************
+  Gallery CSS
+*****************/
+
+.wrap {
+  overflow: hidden;
+  margin: 10px;
+}
+.box {
+  float: left;
+  position: relative;
+  width: 20%;
+  padding-bottom: 20%;
+}
+.boxInner {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  overflow: hidden;
+}
+.boxInner img {
+  width: 100%;
+}
+.boxInner .titleBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: -50px;
+  background: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  padding: 10px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+section.no-touch .boxInner:hover .titleBox, section.touch .boxInner.touchFocus .titleBox {
+  margin-bottom: 0;
+}
+@media only screen and (max-width : 480px) {
+  /* Smartphone view: 1 tile */
+  .box {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+  /* Tablet view: 2 tiles */
+  .box {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+  /* Small desktop / ipad view: 3 tiles */
+  .box {
+    width: 33.3%;
+    padding-bottom: 33.3%;
+  }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+  /* Medium desktop: 4 tiles */
+  .box {
+    width: 25%;
+    padding-bottom: 25%;
+  }
+}
+
+/*******************
+    Admissions CSS
+*******************/
+
+label{
+  width: 200px;
+  display: inline-block;
+  text-align: right;
+}
+
+input[type=text], input[type=tel]{
+  width: 45%;
+}
+
+select{
+  width: 45%;
+}
+
+#submit{
+  width: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+}
+
+
+/*******************
+    Facilities CSS
+*******************/
+
+.facility-container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.facility-container img {
+  max-width: 100%
+}
+.image {
+  flex-basis: 40%
+}
+.text {
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+/*******************
+    Contact Us CSS
+*******************/
+
+.map-container {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-container iframe {
+  left:0;
+  top:0;
+  height:100% !important;
+  width:100% !important;
+  position:absolute;
+}

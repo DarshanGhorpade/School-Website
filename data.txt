@@ -1,0 +1,59 @@
+V G International School
+
+Develop website for 1st to 10th standard CBSE school (V G International School)
+
+You are free to use any technology in which you are comfortable, also you can download school website templates from internet if necessary.
+
+Pages:
+
+Home
+
+About Us
+
+Academics
+
+Admission
+
+Facilities
+
+Gallery (shows pictures of school and facilities)
+
+Careers (for hiring teachers needed for school)
+
+Contact Us (Use google map and contact form)
+
+You can add more pages if you want (take reference from other school websites).
+
+You can refer following website or any school website
+
+http://afschoolchakeriknp.in/
+
+https://www.ryaninternational.org/
+
+Design front End by keep in mind that this is school for 1st to 10th standard students,
+
+Write some contents where it is necessary
+
+Take relevant images from google where it is necessary or if you are comfortable in graphics designing you can design some images.
+
+After clicking on ‘Take a Course’ candidate should fill following fields
+
+Full Name of student:
+
+Full Name of Father:
+
+Contact Number (Parents):
+
+Academic Year: (Dropdown list – 2020-2021, 2021-2022 etc)
+
+Grade/Class: (Dropdown list from 1 to 10)
+
+Fees for each class must be mentioned on website and students can pay online fees.
+
+If you want to add some extra features from your side in website it will be welcome.
+
+It will be great if you can write some contents else use dummy data, we will add contents later
+
+In Contact us page take dummy address, we will add it later.
+
+I am expecting some creativity from your side also. Use attached logo
